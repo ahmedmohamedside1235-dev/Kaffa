@@ -1,0 +1,265 @@
+@media (max-width: 1300px) {
+
+
+    /* *media query for Header */
+
+    /* *Navigation bar */
+    header nav.navbar .navbar-brand {
+        width: 20%; 
+    }
+
+    header nav.navbar .navbar-toggler {
+        box-shadow: none;
+        height: 40px;
+        width: 50px;
+        border: 1px solid var(--bs-success);
+    }
+
+    header nav.navbar .navbar-toggler[aria-expanded="true"] {
+        background-color: var(--bs-white);
+        border-color: var(--bs-white);
+        transition-duration: 0.5s;
+    }
+
+    header nav.navbar .navbar-toggler span {
+        background-color: var(--bs-success);
+        display: block;
+        height: 2px;
+        width: 25px;
+        margin: auto;
+    }
+
+    header nav.navbar .navbar-toggler span.middle {
+        margin-block: 7px;
+    }
+
+    header nav.navbar .navbar-collapse {
+        background-color: var(--bs-dark);
+        border-radius: 5px;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    header nav.navbar .navbar-collapse ul li a {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav.navbar .navbar-collapse ul li a span.middle {
+        right: -100%;
+        top: calc(100%/3 - 1px);
+        height: calc(100%/3 + 2px);
+    }
+
+    /* *slides */
+    #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 16px;
+        width: 90%;
+        margin-block: 20px;
+    }
+
+    /* *media query for section Menu */
+    #Menu .tab-content .tab-pane .row .item {
+        width: 90%;
+        margin: auto auto 20px;
+    }
+
+
+    /* *media query for section Beans coffee  */
+    #Beans .container h2 {
+        font-size: 23px;
+        text-shadow: 1.6px 1.6px 1px #362d27;
+    }
+
+    #Beans .container h3 {
+        font-size: 30px;
+    }
+
+    #Beans .container i {
+        font-size: 50px;
+    }
+
+    /* *media query for video modal */
+    #VideoModal .modal-dialog .modal-content {
+        width: 90%;
+    }
+
+    /* *media query for section Book */
+    #Book .container {
+        background-image: none;
+    }
+
+    #Book form {
+        width: 90%;
+        margin: auto;
+    }
+
+    #Book form .row .item,
+    #Book form button {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    /* *media query for section services */
+
+    #Services img {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    /* *media query for section Menu */
+    #Menu .tab-content .tab-pane .row .item {
+        width: 70%;
+    }
+
+    /* *media query for section Beans coffee  */
+    #Beans .container h2 {
+        font-size: 30px;
+    }
+
+    #Beans .container h3 {
+        font-size: 40px;
+    }
+
+    #Beans .container i {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+
+    /* *media query for Header */
+
+    /* *Navigation bar */
+    header nav.navbar .navbar-brand {
+        width: 15%;
+    }
+
+    /* *slides */
+    #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    /* *media query for section Menu */
+    #Menu .tab-content .tab-pane .row .item {
+        width: 100%;
+    }
+
+    /* *media query for section Beans coffee  */
+    #Beans .container h2 {
+        font-size: 40px;
+    }
+
+    #Beans .container h3 {
+        font-size: 50px;
+    }
+
+    #Beans .container i {
+        font-size: 90px;
+    }
+
+    /* *media query for video modal */
+    #VideoModal .modal-dialog .modal-content {
+        width: 70%;
+    }
+
+    /* *media query for section Book */
+    #Book .container {
+        background-image: url("../images/girl.png");
+        background-size: 50%;
+    }
+
+    #Book form {
+        width: 50%;
+        margin: initial;
+        margin-left: auto;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    /* *media query for Header */
+
+    /* *Navigation bar */
+    header nav.navbar .navbar-brand {
+        width: 12%;
+    }
+
+    /* *slides */
+    #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 50px;
+    }
+
+    /* *media query for section services */
+    #Services img {
+        width: 50%;
+    }
+
+    /* *media query for section Beans coffee  */
+    #Beans .container h2 {
+        font-size: 50px;
+    }
+
+    #Beans .container h3 {
+        font-size: 60px;
+    }
+
+    #Beans .container i {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    /* *media query for Header */
+
+    /* *Navigation bar */
+    header nav.navbar .navbar-brand {
+        width: 8%;
+    }
+
+    header nav.navbar .navbar-collapse {
+        background-color: initial;
+    }
+
+
+    /* *slides */
+    #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 60px;
+    }
+
+    /* *media query for section About */
+
+    /* *cards */
+    #About .row .part2 .special .item {
+        width: 100%;
+    }
+
+    /* *media query for section services */
+
+    #Services img {
+        width: 100%;
+    }
+
+    /* *media query for video modal */
+    #VideoModal .modal-dialog .modal-content {
+        width: 60%;
+    }
+
+    /* *media query for section Book */
+    #Book form .row .item,
+    #Book form button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}

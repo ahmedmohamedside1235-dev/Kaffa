@@ -1,0 +1,11 @@
+
+/* *animation for image in Services */
+@keyframes updown{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: -25px;
+    }
+}

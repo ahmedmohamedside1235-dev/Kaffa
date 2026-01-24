@@ -1,0 +1,618 @@
+/* *navigation bar */
+header nav.navbar {
+    z-index: 2;
+    width: 100%;
+    padding-block: 20px;
+}
+
+header nav.navbar .navbar-brand {
+    width: 7%;
+}
+
+header nav.navbar .navbar-collapse ul li a {
+    letter-spacing: 1.5px;
+}
+
+header nav.navbar .navbar-collapse ul li a::before,
+header nav.navbar .navbar-collapse ul li a::after,
+header nav.navbar .navbar-collapse ul li a span.middle {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100%/3);
+    background-color: var(--bs-success);
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+header nav.navbar .navbar-collapse ul li a::before {
+    top: 0;
+    left: -100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+header nav.navbar .navbar-collapse ul li a span.middle {
+    right: -100%;
+    top: calc(100%/3);
+}
+
+header nav.navbar .navbar-collapse ul li a::after {
+    bottom: 0;
+    left: -100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+header nav.navbar .navbar-collapse ul li a:hover::before,
+header nav.navbar .navbar-collapse ul li a:hover::after {
+    left: 0;
+}
+
+header nav.navbar .navbar-collapse ul li a:hover span.middle {
+    right: 0;
+}
+
+/* *slides */
+#carouselExampleCaptions .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background-color: #4c8a5480;
+}
+
+#carouselExampleCaptions .carousel-indicators button.active {
+    background-color: var(--bs-success);
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url("../images/banner1.jpg");
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url("../images/banner2.jpg");
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url("../images/banner3.jpg");
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url("../images/banner4.jpg");
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    position: initial;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2,
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p,
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button {
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 70px;
+    color: var(--bs-success);
+    font-weight: 400;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+    transition-delay: 0.2s;
+    font-size: 20px;
+    margin-block: 45px;
+    letter-spacing: 1.5px;
+    width: 80%;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button {
+    transition-delay: 0.4s;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item.active .carousel-caption>* {
+    top: 0;
+    opacity: 1;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button {
+    position: relative;
+    overflow: hidden;
+    color: var(--bs-success);
+    transition-duration: 0.5s;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button::after,
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 21px solid;
+    border-top-color: var(--bs-success);
+    border-right-color: var(--bs-success);
+    border-bottom-color: var(--bs-success);
+    border-left-color: var(--bs-success);
+    position: absolute;
+    top: 0;
+    transition-duration: 1s;
+    z-index: -1;
+}
+
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button::before {
+    border-right-color: transparent;
+    left: -100%;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button::after {
+    border-left-color: transparent;
+    right: -100%;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button:hover {
+    color: var(--bs-white);
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button:hover:before {
+    left: 0;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .button button:hover::after {
+    right: 0;
+}
+
+/* *section About */
+#About {
+    background-color: #4D8B55;
+    background-image: url("../images/leaves_pattern.png");
+}
+
+/* *content */
+#About .container>.row .box h2 {
+    font-size: 45px;
+}
+
+#About .container>.row .box p {
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#About .container>.row .box button {
+    color: var(--bs-white);
+    font-size: 20px;
+    letter-spacing: initial;
+    position: relative;
+    overflow: hidden;
+}
+
+#About .container>.row .box button:hover {
+    color: #4D8B55;
+}
+
+#About .container>.row .box button::before,
+#About .container>.row .box button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bs-white);
+    position: absolute;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+#About .container>.row .box button::before {
+    top: -50%;
+}
+
+#About .container>.row .box button:hover::before {
+    top: 0;
+}
+
+#About .container>.row .box button::after {
+    bottom: -50%;
+}
+
+#About .container>.row .box button:hover::after {
+    bottom: 0;
+}
+
+
+/* *cards */
+#About .row .part2 .special .item {
+    width: 230px;
+    height: 390px;
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    /*responsive*/
+}
+
+
+#About .row .part2 .special:nth-of-type(1) .item .front {
+    background-image: url("../images/about_front_01.jpg");
+    height: 100%;
+}
+
+#About .row .part2 .special:nth-of-type(2) .item .front {
+    background-image: url("../images/about_front_02.jpg");
+    height: 100%;
+}
+
+#About .row .part2 .special:nth-of-type(3) .item .front {
+    background-image: url("../images/about_front_03.jpg");
+    height: 100%;
+}
+
+#About .row .part2 .special .item .front {
+    transform: rotateY(0deg);
+    transition-duration: 2s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#About .row .part2 .special .item:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .row .part2 .special .item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition-duration: 2s;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    color: var(--bs-white);
+    height: 100%;
+}
+
+#About .row .part2 .special:nth-of-type(1) .item .back {
+    background-color: #404042;
+}
+
+#About .row .part2 .special:nth-of-type(2) .item .back {
+    background-color: #87744A;
+}
+
+#About .row .part2 .special:nth-of-type(3) .item .back {
+    background-color: #6D1F37;
+}
+
+#About .row .part2 .special .item:hover .back {
+    transform: rotateY(0deg);
+}
+
+#About .row .part2 .special .item .back .image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#About .row .part2 .special .item .back button {
+    color: var(--bs-white);
+    padding: 5px 20px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition-duration: 0.5s;
+}
+
+#About .row .part2 .special .item .back button:hover {
+    background-color: var(--bs-white);
+    color: #404042;
+}
+
+#About .row .part2 .special .item .back button i {
+    transition-duration: 0.5s;
+}
+
+#About .row .part2 .special .item .back button:hover i {
+    margin-left: 5px;
+}
+
+/* *section Services */
+#Services {
+    background-image: url("../images/beans_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--bs-white);
+    position: relative;
+}
+
+#Services::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* *for all paragraph */
+#Services .container p {
+    color: #c2c2c2;
+    font-weight: lighter;
+}
+
+/* *for all icon */
+#Services .row .item .row .icon i {
+    color: var(--bs-success);
+    font-size: 40px;
+}
+
+/* *for center image */
+#Services .row .image {
+    position: relative;
+    top: 0;
+    animation-name: updown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* *section Menu */
+#Menu {
+    background-color: #4D8B55;
+    background-image: url("../images/leaves_pattern.png");
+}
+
+#Menu .nav-content {
+    overflow: auto;
+}
+
+#Menu .nav-content ul {
+    width: max-content;
+    border-radius: 10px;
+    border: 1px solid var(--bs-white);
+    margin: auto;
+}
+
+#Menu .nav-content ul li button {
+    color: var(--bs-white);
+    transition-duration: 0.5s;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#Menu .nav-content ul li button:hover,
+#Menu .nav-content ul li button.active {
+    background-color: var(--bs-white);
+    color: #4D8B55;
+}
+
+
+#Menu .tab-content .tab-pane .row .item {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bs-white);
+    position: relative;
+    margin-bottom: 20px;
+    transform: scale(0);
+    text-align: center;
+}
+
+#Menu .tab-content .tab-pane.show .row .item {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+
+#Menu .tab-content .row .item img {
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+
+#Menu .tab-content .row .item:hover img {
+    transform: scale(1);
+}
+
+#Menu .tab-content .row .item .info h6,
+#Menu .tab-content .row .item .info P {
+    position: absolute;
+    left: 0;
+    background-color: #4D8B55;
+    background-image: url("../images/leaves_pattern.png");
+    color: var(--bs-white);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    transition-duration: 1s;
+    transform: translateX(-100%);
+}
+
+#Menu .tab-content .row .item .info h6 {
+    top: 10px;
+}
+
+#Menu .tab-content .row .item .info P {
+    bottom: 10px;
+}
+
+#Menu .tab-content .row .item:hover .info h6,
+#Menu .tab-content .row .item:hover .info P {
+    transform: translateX(0);
+}
+
+/* *section Beans coffee */
+#Beans {
+    background-image: url("../images/ice_drinks_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: var(--bs-white);
+}
+
+#Beans::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 45, 39, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Beans .container h2 {
+    font-size: 80px;
+    color: #4D8B55;
+    text-shadow: 3px 3px 1px #362d27;
+}
+
+#Beans .container h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#Beans .container i {
+    font-size: 90px;
+    transition-duration: 0.5s;
+    color: var(--bs-white);
+    cursor: pointer;
+}
+
+#Beans .container i:hover {
+    color: #4D8B55;
+}
+
+/* *video modal */
+#VideoModal {
+    justify-content: center;
+    align-items: center;
+}
+
+#VideoModal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: initial;
+    height: 100%;
+    margin: 0;
+}
+
+#VideoModal .modal-dialog .modal-content {
+    width: 50%;
+    background-color: transparent;
+}
+
+#VideoModal .modal-dialog .modal-content video {
+    border-radius: 10px;
+}
+
+/* *section Book */
+#Book {
+    background-image: url("../images/black-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Book .container {
+    background-image: url("../images/girl.png");
+    background-position: left bottom;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+
+#Book form {
+    background-color: #4D8B55;
+    background-image: url(../images/leaves_pattern.png);
+    width: 40%;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+#Book form .row .item,
+#Book form button {
+    width: 80%;
+    margin: auto;
+}
+
+#Book form .row .item .input:focus {
+    box-shadow: none;
+}
+
+#Book form .row .item textarea {
+    resize: none;
+}
+
+#Book form button {
+    color: var(--bs-white);
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+#Book form button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #4D8B55;
+    background-image: url(../images/leaves_pattern.png);
+    transition-duration: 0.5s;
+}
+
+#Book form button:hover {
+    border: 1px solid var(--bs-white);
+}
+
+#Book form button:hover::after {
+    bottom: 0;
+}
+
+/* *footer */
+footer {
+    background-color: #333;
+    border: none;
+    font-weight: lighter;
+}
+
+footer span {
+    font-weight: bolder;
+}
+
+
+/* *scrollbar */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #404042;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #4D8B55;
+    border-radius: 5px;
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sansita Swashed", system-ui;
+}
+
+.text {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition-duration: 0.5S;
+}
+
+.title {
+    margin: auto;
+    width: fit-content;
+    color: var(--bs-white);
+}
+
+.title h2 {
+    font-size: 40px;
+}
